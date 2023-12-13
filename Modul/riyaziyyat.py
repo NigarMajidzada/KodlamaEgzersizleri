@@ -1,0 +1,12 @@
+def cem(a,b):
+    return a+b
+def ferq(a,b):
+    return a-b
+def hasil(a,b):
+    return a*b
+def vurma(a,b):
+    return a*b
+def bolme(a,b):
+    return a//b
+def quvvet(a,b):
+    return a**b
