@@ -1,17 +1,17 @@
 class Kareler():
     def __init__(self,max=0):
         self.max=max
-        self.quvvet=0
+        self.sayi=1
     def __iter__(self):
         return self
 
     def __next__(self):
-        if  (self.quvvet<self.max):
-            sonuc=2**self.quvvet
-            self.quvvet+=1
-            return  sonuc
+        if  (self.sayi  <=self.max):
+                sonuc=self.sayi**2
+                self.sayi+=1
+                return  sonuc
         else:
-            self.quvvet=0
+            self.sayi=1
             raise StopIteration
 
 kareler1=Kareler(5)
