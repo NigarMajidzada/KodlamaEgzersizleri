@@ -12,10 +12,10 @@ soup=BeautifulSoup(html_icerigi,"html.parser")
 
 # print(soup.prettify())
 
-all_link=soup.findAll('a')
 
-for link in all_link:
-    print(link.text)
+
+for link in soup.find_all("a"):
+    print(link)
     print("**************************************************************************")
 
 # print(soup.find_all('div',{'class':'yp-poi-box-2'}))
